@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgreen;
+    text-align: center;
+}
+
+#heading{
+    margin: 1rem;
+}
+.container{
+    height: 70vh;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+    padding: 0.5rem ;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 0.7rem;
+    border: 1px solid black;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    font-size: 8vmin;    
+    background-color: rgb(251, 251, 188);
+    font-family: cursive;
+    transition: all 0.3s linear 0s;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.resetBtn{
+    padding: 1rem 2rem;
+    background-color: rgb(50, 44, 44);
+    color: white;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-family:cursive;
+    transition: all 0.1s linear 0s;
+}
+.resetBtn:hover{
+    background-color: rgb(75, 70, 70);
+    transform: scale(1.1);
+}
+
+.newBtn:hover{
+    background-color: rgb(75, 70, 70);
+}
+
+.winner{
+    color: rgb(25, 117, 25);
+    text-shadow: 0 0 2px;
+    font-family: cursive;
+}
+.newBtn{
+
+    padding: 1rem 2rem;
+    background-color: rgb(50, 44, 44);
+    color: white;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+    font-family:cursive;
+}
+.hide{
+    height: 84vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mesgContainer{
+    display: none;
+}
